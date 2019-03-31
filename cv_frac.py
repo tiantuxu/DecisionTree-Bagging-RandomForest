@@ -237,8 +237,9 @@ for t_frac in f:
 
 
 for t_frac in f:
-    print t_frac
+    print "t_frac:", t_frac
     for i in range(10):
+	print "round:", i
         # Partition the tarin and cv
         train_set_df = []
         

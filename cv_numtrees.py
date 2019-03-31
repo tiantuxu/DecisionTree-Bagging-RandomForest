@@ -209,8 +209,9 @@ for t in tree_num:
 
 
 for t in tree_num:
-    print t
+    print "tree_num:", t
     for i in range(10):
+	print "round:", i
         # Partition the tarin and cv
         train_set_df = []
         

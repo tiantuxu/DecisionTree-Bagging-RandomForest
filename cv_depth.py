@@ -236,8 +236,9 @@ for d in depth:
 
 
 for d in depth:
-    print d
+    print "depth:", d
     for i in range(10):
+	print "round:", i
         # Partition the tarin and cv
         train_set_df = []
         
