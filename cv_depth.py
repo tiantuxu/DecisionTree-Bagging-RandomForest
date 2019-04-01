@@ -305,8 +305,8 @@ plt.savefig('./cv_depth.png')
 
 # In[18]:
 
-
-print stats.ttest_ind(dt_avg, rf_avg)
+for d in depth:
+    print "d =", d, stats.ttest_ind(dt_res[d], rf_res[d])
 
 
 # In[ ]:

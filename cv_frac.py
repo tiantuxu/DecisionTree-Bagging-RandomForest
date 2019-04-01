@@ -311,8 +311,9 @@ plt.savefig('./cv_frac.png')
 # In[22]:
 
 
-print stats.ttest_ind(bagging_avg, rf_avg)
-
+f = [0.05,0.075,0.1,0.15,0.2]
+for t_frac in f:
+    print "t_frac =", t_frac, stats.ttest_ind(dt_res[t_frac], rf_res[t_frac])
 
 # In[ ]:
 

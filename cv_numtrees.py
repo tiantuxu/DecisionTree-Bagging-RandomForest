@@ -268,9 +268,8 @@ plt.savefig('./cv_numtrees.png')
 
 # In[15]:
 
-
-print stats.ttest_ind(bagging_avg, rf_avg)
-
+for t in tree_num:
+    print "t =", t, stats.ttest_ind(bagging_res[t], rf_res[t])
 
 # In[ ]:
 
