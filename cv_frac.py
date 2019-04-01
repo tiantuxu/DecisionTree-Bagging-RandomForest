@@ -286,9 +286,6 @@ for t_frac in f:
     rf_avg.append(np.mean(rf_res[t_frac], axis = 0))
     rf_stdrr.append(np.std(rf_res[t_frac], axis = 0)/np.sqrt(10))
 
-for i in range(len(f)):
-    f[i] *= 9 * 260
-
 #print lr_avg, svm_avg
     
 fig = plt.figure()
